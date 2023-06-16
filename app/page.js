@@ -3,11 +3,12 @@ import styles from './page.module.css'
 
 export default function Home() {
   const token = {
-    'basic5742':{type:'basic', date:'2023-6-29'},
-    'basic4398':{type:'basic', date:'2099-1-1'},
-    'pass0293':{type:'pass', date:'2023-6-29'},
-    'pass3627':{type:'pass', date:'2099-1-1'},
-    'all5436':{type:'all', date:'2099-1-1'}
+    'bsic5742fe':{type:'basic', date:'2023-6-29'},
+    'bsic4398gr':{type:'basic', date:'2099-1-1'},
+    'plus0293iv':{type:'plus', date:'2023-6-29'},
+    'plus3627aw':{type:'plus', date:'2099-1-1'},
+    'prem5436dw':{type:'premium', date:'2099-1-1'},
+    'all5436de':{type:'all', date:'2099-1-1'}
   }
   return (
     <main className={styles.main}>
