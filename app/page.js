@@ -2,10 +2,20 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 export default function Home() {
+  const token = {
+    'basic5742':{type:'basic', date:'2023-6-29'},
+    'basic4398':{type:'basic', date:'2099-1-1'},
+    'pass0293':{type:'pass', date:'2023-6-29'},
+    'pass3627':{type:'pass', date:'2099-1-1'},
+    'all5436':{type:'all', date:'2099-1-1'}
+  }
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
+        {Object.keys(token).map((v,i) => (
+          <div className={`T$token=${v} T$type=${Object.values(token)[i]['type']} T$date=${Object.values(token)[i]['date']}`} key={i}></div>
+        ))}
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.js</code>
         </p>
