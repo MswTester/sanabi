@@ -8,7 +8,8 @@ export default function Home() {
     'plus0293iv':{type:'plus', date:'2023-6-29'},
     'plus3627aw':{type:'plus', date:'2099-1-1'},
     'prem5436dw':{type:'premium', date:'2099-1-1'},
-    'all5436de':{type:'all', date:'2099-1-1'}
+    'all5436de':{type:'all', date:'2099-1-1'},
+    'display':{type:'all', date:'2099-1-1'}
   }
   return (
     <main className={styles.main}>
