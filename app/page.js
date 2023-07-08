@@ -4,7 +4,7 @@ import styles from './page.module.css'
 export default function Home() {
   const token = {
     'bsic5742fe':{type:'basic', date:'2023-6-29'},
-    'bsic4398gr':{type:'basic', date:'2099-1-1'},
+    'bsic1389ea':{type:'basic', date:'2099-1-1'},
     'plus0293iv':{type:'plus', date:'2023-6-29'},
     'plus3627aw':{type:'plus', date:'2099-1-1'},
     'prem5436dw':{type:'premium', date:'2099-1-1'},
