@@ -40,3 +40,18 @@
     @apply font-heading;
   }
 }
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+input, textarea, select {
+  @apply border-0 bg-input text-foreground rounded-md p-1 md:p-1.5 lg:p-2 disabled:bg-muted disabled:text-muted-foreground disabled:opacity-50;
+}
+
+button {
+  @apply bg-primary text-primary-foreground rounded-md p-1 md:p-1.5 lg:p-2 disabled:bg-muted disabled:text-muted-foreground disabled:opacity-50;
+}
