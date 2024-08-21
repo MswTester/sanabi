@@ -8,3 +8,9 @@ interface Step{
     description: string;
     features: string[];
 }
+
+interface Token {
+    key: string;
+    expiration: number;
+    unlocked: [];
+}
