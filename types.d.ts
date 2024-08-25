@@ -12,5 +12,5 @@ interface Step{
 interface Token {
     key: string;
     expiration: number;
-    unlocked: [];
+    perms: string[];
 }
