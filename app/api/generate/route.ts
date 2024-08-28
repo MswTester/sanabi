@@ -11,9 +11,10 @@ export async function POST(request: Request) {
     }
     const res = await tokenCol.insertOne({
         key: json.key,
-        unlocked: json.unlocked,
-        expiration: json.expiration
-    });
+        perms: json.perms,
+        expiration: json.expiration,
+        using: false,
+    } as Token);
     return new Response(JSON.stringify(res), {
         headers: { "content-type": "application/json" },
     });
