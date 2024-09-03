@@ -3,7 +3,7 @@ import getClient from "../db";
 export async function POST(request: Request) {
     const client = await getClient();
     const json = await request.json();
-    const tokenCol = await client.db("sanabi").collection("tokens");
+    const tokenCol = client.db("sanabi").collection("tokens");
     const token = await tokenCol.findOne({ key: json.key });
     if (!token) {
         return new Response("Unauthorized", { status: 401 });
