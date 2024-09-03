@@ -13,7 +13,7 @@ export default function Main(){
     const refresh =() => {
         if(isFetching) return;
         setIsFetching(true);
-        fetch('/api/get')
+        fetch('/api/gettokens')
         .then(res => res.json())
         .then(data => {
             console.log(data);
