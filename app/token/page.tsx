@@ -10,20 +10,18 @@ export default function Main(){
     const [date, setDate] = useState("");
     const [perms, setPerms] = useState<string[]>([]);
     
-    const refresh =() => {
+    const refresh = async () => {
         if(isFetching) return;
         setIsFetching(true);
-        fetch('/api/gettokens')
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            setTokens(data);
-            setIsFetching(false);
+        const res = await fetch('/api/gettokens', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
         })
-        .catch(err => {
-            console.error(err);
-            setIsFetching(false);
-        });
+        const json = await res.json();
+        setIsFetching(false);
+        setTokens(json);
     }
     useEffect(() => setOnce(true), []);
     useEffect(() => {
