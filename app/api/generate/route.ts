@@ -1,6 +1,7 @@
-import client from "../db";
+import getClient from "../db";
 
 export async function POST(request: Request) {
+    const client = await getClient();
     const json = await request.json();
     const tokenCol = client.db("sanabi").collection("tokens");
     const token = await tokenCol.findOne({ key: json.key });
