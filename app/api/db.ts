@@ -9,9 +9,8 @@ const client = new MongoClient(uri, {
         deprecationErrors: true,
     }
 });
-export const getClient = async () => {
+const conn = async () => {
     await client.connect();
-    return client;
 }
 
-export default getClient;
+export {client, conn};
