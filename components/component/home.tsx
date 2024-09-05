@@ -56,7 +56,7 @@ export function Home() {
           <h2 className="mb-8 text-3xl font-bold tracking-tight">Our Products</h2>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <ProductCard id="unicum" title="Unicum" description="Dynamic cheat tools. It have many features that provide in-game API as electron web services." image="/unicum.png" />
-            <ProductCard id="remix" title="Remix" description="Legacy cheat model. It's for researching and reversing the game." image="/remix.png" />
+            <ProductCard id="pixel" title="Pixel" description="Legacy cheat model. It's for researching and reversing the game." image="/pixel.svg" />
             <ProductCard id="kittool" title="KitTool" description="Memory analyzing tool. It have many features to assist cheat engine to find memory." image="/kittool.png" />
           </div>
         </div>
