@@ -4,7 +4,7 @@ export default function Main() {
     return (
         <Product
             id="unicum"
-            version="1.1.13"
+            version="1.1.14"
             title="Unicum"
             description="Dynamic cheat tools. It have many features that provide in-game API as electron web services."
             steps={[
