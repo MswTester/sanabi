@@ -4,7 +4,7 @@ export default function Main() {
     return (
         <Product
             id="pixel"
-            version="1.2.0"
+            version="1.2.1"
             title="Pixel"
             description="Legacy cheat model. It's for researching and reversing the game."
             steps={[]}
