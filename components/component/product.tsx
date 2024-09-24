@@ -23,7 +23,6 @@ import Link from "next/link"
 
 export function Product(props:{
   id: string;
-  version: string;
   title: string;
   description: string;
   steps: Step[];
@@ -65,7 +64,7 @@ export function Product(props:{
             <div className="flex justify-center">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90"
               onClick={e => {
-                window.open(`https://github.com/MswTester/sanabi/releases/download/${props.id}-${props.version}/${props.id}-Setup-${props.version}.exe`)
+                window.open(`https://github.com/MswTester/sanabi/releases/download/${props.id}/${props.id}-Setup.exe`)
               }}>
                 Download Now (only for windows)
               </Button>
